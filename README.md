@@ -46,21 +46,21 @@ Spring Boot + Netty 混合应用，配备 Vue 3 + Element Plus 前端。REST API
 
 1. **前端**：用户通过 Vue 3 表单提交消息
 2. **REST 层**（端口 8080）：
-   - `NettyController` 暴露 `POST /netty/helloNetty`
-   - `@MethodLogPrint` 注解触发 AOP 计时切面
+    - `NettyController` 暴露 `POST /netty/helloNetty`
+    - `@MethodLogPrint` 注解触发 AOP 计时切面
 3. **Netty Client**：
-   - 每次请求创建新的 Netty 客户端
-   - TCP 连接到 `127.0.0.1:8082`
+    - 每次请求创建新的 Netty 客户端
+    - TCP 连接到 `127.0.0.1:8082`
 4. **Netty Server**（端口 8082）：
-   - Boss 组：1 个线程（接受连接）
-   - Worker 组：200 个线程（处理 I/O）
-   - `MessageDecoder`：ByteBuf → byte[] → MessageDTO
-   - `NettyServerHandler`：接收 MessageDTO，设置响应字段（uuid, serverTime, serverMsg）
-   - `MessageEncoder`：MessageDTO → byte[] → ByteBuf
+    - Boss 组：1 个线程（接受连接）
+    - Worker 组：200 个线程（处理 I/O）
+    - `MessageDecoder`：ByteBuf → byte[] → MessageDTO
+    - `NettyServerHandler`：接收 MessageDTO，设置响应字段（uuid, serverTime, serverMsg）
+    - `MessageEncoder`：MessageDTO → byte[] → ByteBuf
 5. **响应返回**：
-   - NettyClientHandler 捕获响应
-   - HTTP 返回 `ResponseResult<MessageDTO>`
-   - 前端显示响应
+    - NettyClientHandler 捕获响应
+    - HTTP 返回 `ResponseResult<MessageDTO>`
+    - 前端显示响应
 
 ### 序列化策略
 
