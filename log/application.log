@@ -1402,3 +1402,4 @@ java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
   "msgSwitch" : "0"
 }
 2026-01-19T23:41:10.983+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-7] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 101ms
+2026-01-19T23:48:22.801+08:00  INFO 11464 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
