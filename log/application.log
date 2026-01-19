@@ -1257,3 +1257,148 @@ java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
 }
 2026-01-19T21:44:10.590+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 68ms
 2026-01-19T21:44:23.139+08:00  INFO 16484 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T23:11:48.786+08:00  INFO 11464 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 11464 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T23:11:48.811+08:00  INFO 11464 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T23:11:52.687+08:00  INFO 11464 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T23:11:52.761+08:00  INFO 11464 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T23:11:52.762+08:00  INFO 11464 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T23:11:52.948+08:00  INFO 11464 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3904 ms
+2026-01-19T23:11:56.084+08:00  INFO 11464 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T23:11:57.256+08:00  INFO 11464 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 10.702 seconds (process running for 20.513)
+2026-01-19T23:11:58.597+08:00  INFO 11464 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T23:14:28.707+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T23:14:28.708+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T23:14:28.713+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-01-19T23:14:29.583+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:14:30.461+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:14:30.461+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:14:30.566+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:14:32.123+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "ac0fe3ea-7514-41ad-9d1d-65a10c704651",
+  "serverTime" : 1768835671126,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "验证消息可靠性",
+  "msgSwitch" : "1"
+}
+2026-01-19T23:14:32.155+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "ac0fe3ea-7514-41ad-9d1d-65a10c704651",
+  "serverTime" : 1768835671126,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "验证消息可靠性",
+  "msgSwitch" : "1"
+}
+2026-01-19T23:14:32.160+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 2578ms
+2026-01-19T23:15:19.161+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:15:19.188+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:15:19.188+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:15:19.191+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:15:19.196+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "5f0b9ca4-edc1-4296-9f53-88da25f9927a",
+  "serverTime" : 1768835719196,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "这是一条测试的消息",
+  "msgSwitch" : "1"
+}
+2026-01-19T23:15:19.198+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "5f0b9ca4-edc1-4296-9f53-88da25f9927a",
+  "serverTime" : 1768835719196,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "这是一条测试的消息",
+  "msgSwitch" : "1"
+}
+2026-01-19T23:15:19.201+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 40ms
+2026-01-19T23:29:25.757+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:29:25.794+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:29:25.799+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:29:25.794+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:29:25.806+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "6f256180-678a-4461-b97d-60e5c1354f5e",
+  "serverTime" : 1768836565806,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "测试问题是否还有",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:29:25.809+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "6f256180-678a-4461-b97d-60e5c1354f5e",
+  "serverTime" : 1768836565806,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "测试问题是否还有",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:29:25.820+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 63ms
+2026-01-19T23:39:23.022+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:39:23.092+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-8-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:39:23.093+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:39:23.096+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:39:23.104+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "c1900a17-1862-4970-be16-0f932b0d9c89",
+  "serverTime" : 1768837163104,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:23.107+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-8-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "c1900a17-1862-4970-be16-0f932b0d9c89",
+  "serverTime" : 1768837163104,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:23.123+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 101ms
+2026-01-19T23:39:25.949+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:39:25.994+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-9-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:39:25.994+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:39:25.996+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-5] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:39:26.003+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-5] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "3b385938-fc71-45e2-9852-a8c110473bf0",
+  "serverTime" : 1768837166003,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:26.006+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-9-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "3b385938-fc71-45e2-9852-a8c110473bf0",
+  "serverTime" : 1768837166003,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:26.010+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 61ms
+2026-01-19T23:39:26.731+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-6] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:39:26.777+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-10-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:39:26.778+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-6] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:39:26.780+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-6] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:39:26.790+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-6] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "770b0236-0945-4697-b941-6a823f5eb322",
+  "serverTime" : 1768837166789,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:26.792+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-10-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "770b0236-0945-4697-b941-6a823f5eb322",
+  "serverTime" : 1768837166789,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:39:26.797+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-6] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 66ms
+2026-01-19T23:41:10.882+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-7] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T23:41:10.969+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-11-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T23:41:10.969+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-7] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T23:41:10.974+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-7] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T23:41:10.976+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-3-7] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "5d7d7516-63a8-4c25-987b-361aa4c8042d",
+  "serverTime" : 1768837270976,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:41:10.978+08:00  INFO 11464 --- [my-netty] [nioEventLoopGroup-11-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "5d7d7516-63a8-4c25-987b-361aa4c8042d",
+  "serverTime" : 1768837270976,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "UBS",
+  "msgSwitch" : "0"
+}
+2026-01-19T23:41:10.983+08:00  INFO 11464 --- [my-netty] [http-nio-8080-exec-7] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 101ms
