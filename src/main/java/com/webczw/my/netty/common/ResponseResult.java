@@ -1,4 +1,4 @@
-package com.webczw.my.netty.client;
+package com.webczw.my.netty.common;
 
 import lombok.Data;
 

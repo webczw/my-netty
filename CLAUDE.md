@@ -4,13 +4,13 @@
 
 ## 项目概述
 
-这是一个 Spring Boot + Netty 混合应用，演示了在 Spring Boot Web 应用中集成 Netty 的高性能 TCP 网络。项目通过 REST 接口暴露服务，内部通过 TCP 与 Netty 服务器通信。
+Spring Boot + Netty 混合应用，演示了在 Spring Boot Web 应用中集成 Netty 的高性能 TCP 网络。REST API 通过 TCP 与 Netty 服务器进行内部通信。
 
 **核心技术栈：**
 - Java 17
 - Spring Boot 4.0.1
 - Netty 4.1.17.Final
-- Maven
+- Jackson（用于 JSON 操作）
 - Lombok
 - Spring AOP
 
@@ -23,7 +23,7 @@ mvn compile
 # 运行测试
 mvn test
 
-# 运行应用（启动 Spring Boot 在 8080 端口和 Netty 服务器在 8082 端口）
+# 运行应用（Spring Boot 在 8080 端口，Netty 服务器在 8082 端口）
 mvn spring-boot:run
 
 # 构建可执行 JAR
@@ -37,80 +37,90 @@ java -jar target/my-netty-0.0.1-SNAPSHOT.jar
 
 ### 双层通信架构
 
-应用结合了两个独立的网络层：
+1. **Spring Boot Web 层**（端口 8080）
+   - 入口：`MyNettyApplication.java` - Spring 上下文初始化后启动 Netty 服务器
+   - REST：`NettyController.java` - 暴露调用 Netty 客户端的 POST 接口
+   - AOP：`MethodLogPrintAspect.java` - 记录 `@MethodLogPrint` 注解方法的执行时间
 
-1. **Spring Boot Web 层** (端口 8080)
-   - 入口：`MyNettyApplication.java` - 在 Spring 上下文初始化后同步启动 Netty 服务器
-   - REST 接口：`TestController.java` - 暴露 POST `/helloNetty?msg=<message>`
-   - AOP：`MethodLogPrintAspect.java` - 记录带注解方法的执行耗时
-
-2. **Netty TCP 层** (端口 8082)
+2. **Netty TCP 层**（端口 8082）
    - 服务器：`NettyServer.java` - TCP 服务器，Boss(1) + Worker(200) 事件循环组
-   - 服务端处理器：`NettyServerHandler.java` - 处理传入消息，返回 UUID 响应
-   - 服务端管道：StringDecoder → StringEncoder → NettyServerHandler
-   - 客户端工具：`NettyClientUtil.java` - 与服务器通信的同步客户端
-   - 客户端处理器：`NettyClientHandler.java` - 捕获服务器响应
+   - 管道：`ServerChannelInitializer.java` - MessageDecoder → MessageEncoder → NettyServerHandler
+   - 处理器：`NettyServerHandler.java` - 接收 `MessageDTO`，添加 uuid/时间戳/响应，写回
+   - 客户端：`NettyClientUtil.java` - 同步客户端，每次请求创建新连接
 
-### 请求流程
+### 消息流程
 
 ```
 HTTP POST /helloNetty?msg=foo
-  → TestController.helloNetty()
-  → NettyClientUtil.helloNetty()
-  → Netty 客户端连接到 127.0.0.1:8082
-  → NettyServerHandler 接收消息
-  → 服务器返回 UUID
-  → 响应返回到 HTTP 调用者
+  → NettyController.helloNetty() [@MethodLogPrint]
+  → NettyClientUtil.helloNetty() [创建新的 Netty 客户端]
+  → TCP 连接到 127.0.0.1:8082
+  → MessageDecoder: bytes → MessageDTO
+  → NettyServerHandler.channelRead() 接收 MessageDTO
+  → Handler 设置 uuid, serverTime, serverMsg
+  → MessageEncoder: MessageDTO → bytes
+  → NettyClientHandler 捕获响应
+  → closeFuture().sync() 等待响应
+  → HTTP 返回 ResponseResult<MessageDTO>
 ```
 
-### 重要设计特性
+### 序列化策略
 
-**同步 Netty 客户端**：`NettyClientUtil` 中的 Netty 客户端采用同步设计 - 创建连接、发送消息，然后通过 `closeFuture().sync()` 等待响应后返回。这是演示架构的故意设计。
+**主要（数据传输）：** Java 原生序列化
+- `ByteUtil.objectToByte(obj)` - 使用 `ObjectOutputStream`
+- `ByteUtil.byteToObject(bytes)` - 使用 `ObjectInputStream`
+- 所有 DTO 必须实现 `Serializable`
+- 用于实际的 Netty 消息传输
 
-**阻塞式服务器启动**：Netty 服务器在 `MyNettyApplication.main()` 中 Spring Boot 初始化后同步启动。服务器的 `closeFuture().sync()` 会无限阻塞，保持应用运行。
+**次要（日志/调试）：** 通过 Jackson 实现 JSON
+- `JsonUtil.toJson(obj)` - 对象转 JSON 字符串
+- `JsonUtil.fromJson(json, clazz)` - JSON 转对象
+- 用于处理器的日志记录
 
-**Netty 服务器配置**：
+**Netty 集成：**
+- `ByteBuf byteBufToByte(byteBuf)` - 从 Netty ByteBuf 读取可读字节
+- `ByteBuf byteToByteBuf(bytes)` - 从字节数组创建 ByteBuf
+
+### Netty 管道配置
+
+**服务端管道**（`ServerChannelInitializer.java:15-17`）：
+```java
+pipeline.addLast("decoder", new MessageDecoder());  // ByteToMessageDecoder
+pipeline.addLast("encoder", new MessageEncoder());  // MessageToByteEncoder<MessageDTO>
+pipeline.addLast(new NettyServerHandler());
+```
+
+**客户端管道**（`NettyClientUtil.java`）：
+- 相同：MessageDecoder → MessageEncoder → NettyClientHandler
+- 两者都使用相同的 `ByteUtil` 进行序列化
+
+### Netty 服务器配置
+
 - 绑定地址：`127.0.0.1:8082`
 - Boss 组：1 个线程（接受连接）
 - Worker 组：200 个线程（处理 I/O）
 - SO_BACKLOG：1024
-- SO_KEEPALIVE：启用（每 2 小时 TCP keepalive 探测）
-
-**Netty 客户端配置**：
-- TCP_NODELAY：true（禁用 Nagle 算法，立即传输）
-- 管道：StringDecoder → StringEncoder → NettyClientHandler
-
-## 代码组织
-
-```
-src/main/java/com/webczw/my/netty/
-├── MyNettyApplication.java          # 主入口，启动 Spring + Netty
-├── controller/
-│   └── TestController.java          # 调用 Netty 客户端的 REST 接口
-├── server/
-│   ├── NettyServer.java             # Netty TCP 服务器
-│   ├── NettyServerHandler.java      # 服务端消息处理器
-│   └── ServerChannelInitializer.java # 服务端管道设置
-├── client/
-│   ├── NettyClientHandler.java      # 客户端响应处理器
-│   └── ResponseResult.java          # 标准响应包装器
-├── util/
-│   └── NettyClientUtil.java         # 同步客户端工具
-└── aop/
-    ├── MethodLogPrint.java          # 自定义日志注解
-    └── MethodLogPrintAspect.java    # 方法耗时的 AOP 切面
-```
+- SO_KEEPALIVE：启用
+- TCP_NODELAY：true（仅客户端，禁用 Nagle 算法以立即传输）
 
 ## 关键文件
 
-- **pom.xml:30** - Java 17 版本要求
-- **MyNettyApplication.java:15-16** - Netty 服务器在 main() 中 Spring Boot 之后启动
-- **NettyServer.java:16-20** - 服务器配置（端口、线程组）
-- **NettyClientUtil.java:41** - 响应的同步等待模式
+- `pom.xml:30` - Java 17 版本要求
+- `pom.xml:44-56` - Jackson 依赖
+- `MyNettyApplication.java` - Netty 服务器在 Spring Boot 后启动，通过 `closeFuture().sync()` 阻塞
+- `NettyServer.java:16-20` - 服务器端口和线程组配置
+- `ServerChannelInitializer.java` - 管道设置
+- `MessageDecoder.java:13` - 解码：`ByteBuf → byte[] → MessageDTO`
+- `MessageEncoder.java:13` - 编码：`MessageDTO → byte[] → ByteBuf`
+- `NettyServerHandler.java:31` - 接收 `MessageDTO`（不是 String），设置响应字段
+- `NettyClientUtil.java:41` - 同步等待：`closeFuture().sync()`
 
 ## 开发注意事项
 
-- Lombok 在 `maven-compiler-plugin` 中配置了注解处理器路径 (pom.xml:67-73)
-- 应用日志输出到 `log/application.log`
-- Netty 服务器仅运行在本地主机 (127.0.0.1)，用于本地演示
-- 测试时两层必须同时运行（它们在主应用中一起启动）
+- Lombok 注解处理器配置在 `maven-compiler-plugin:82-86`
+- 日志输出到 `log/application.log`（在 `application.yml` 中配置）
+- Netty 服务器仅运行在本地主机（127.0.0.1）
+- 客户端每次请求创建新连接（非连接池）
+- 所有通过 Netty 传输的 DTO 必须实现 `Serializable`
+- 使用 Java 序列化进行传输；Jackson 用于 JSON 操作
+- `NettyServerHandler` 直接接收 `MessageDTO`（管道处理反序列化）

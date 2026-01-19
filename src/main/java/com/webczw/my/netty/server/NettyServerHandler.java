@@ -1,9 +1,12 @@
 package com.webczw.my.netty.server;
 
+import com.webczw.my.netty.dto.MessageDTO;
+import com.webczw.my.netty.util.JsonUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -18,16 +21,20 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         log.info("Channel active......");
     }
+
     /**
      * 客户端发消息会触发
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        String uuid = UUID.randomUUID().toString();
-        log.info("服务器收到消息: {}", msg.toString());
-        ctx.write("你也好哦,uuid="+uuid);
-        ctx.flush();
+        MessageDTO dto = (MessageDTO) msg;
+        dto.setUuid(UUID.randomUUID().toString());
+        dto.setServerTime(new Date());
+        dto.setServerMsg("你也好哦!");
+        log.info("服务器收到消息: {}", JsonUtil.toJson(dto));
+        ctx.writeAndFlush(dto);
     }
+
     /**
      * 发生异常触发
      */

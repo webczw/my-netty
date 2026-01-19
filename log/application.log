@@ -1,76 +1,1259 @@
-2026-01-17T20:41:12.944+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19444 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
-2026-01-17T20:41:12.958+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-01-17T20:41:15.273+08:00  INFO 19444 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-01-17T20:41:15.307+08:00  INFO 19444 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-17T20:41:15.309+08:00  INFO 19444 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-01-17T20:41:15.412+08:00  INFO 19444 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2315 ms
-2026-01-17T20:41:16.360+08:00  INFO 19444 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-01-17T20:41:16.370+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.069 seconds (process running for 7.763)
-2026-01-17T20:41:17.392+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
-2026-01-17T20:42:36.243+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-17T20:42:36.243+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-17T20:42:36.248+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2026-01-17T20:42:36.368+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
-2026-01-17T20:42:36.432+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
-2026-01-17T20:42:36.432+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
-2026-01-17T20:42:36.435+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
-2026-01-17T20:42:36.489+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: OWM6ncTxContent-Type: application/json
-2026-01-17T20:42:36.489+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦
-2026-01-17T20:42:36.493+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 125ms
-2026-01-17T20:44:19.275+08:00  INFO 19444 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-17T20:44:29.695+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 18860 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
-2026-01-17T20:44:29.716+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-01-17T20:44:31.732+08:00  INFO 18860 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-01-17T20:44:31.759+08:00  INFO 18860 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-17T20:44:31.760+08:00  INFO 18860 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-01-17T20:44:31.851+08:00  INFO 18860 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1997 ms
-2026-01-17T20:44:32.792+08:00  INFO 18860 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-01-17T20:44:32.801+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.682 seconds (process running for 6.702)
-2026-01-17T20:44:33.992+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
-2026-01-17T20:44:39.411+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-17T20:44:39.413+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-17T20:44:39.417+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-01-17T20:44:39.579+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
-2026-01-17T20:44:39.653+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
-2026-01-17T20:44:39.656+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
-2026-01-17T20:44:39.660+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
-2026-01-17T20:44:39.705+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: plFPYoe1
-2026-01-17T20:44:39.718+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦
-2026-01-17T20:44:39.722+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 146ms
-2026-01-17T20:48:36.387+08:00  INFO 18860 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-17T20:48:36.424+08:00  INFO 18860 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-01-17T20:56:28.877+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19376 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
-2026-01-17T20:56:28.881+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-01-17T20:56:30.744+08:00  INFO 19376 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-01-17T20:56:30.775+08:00  INFO 19376 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-17T20:56:30.775+08:00  INFO 19376 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-01-17T20:56:30.855+08:00  INFO 19376 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1843 ms
-2026-01-17T20:56:31.711+08:00  INFO 19376 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-01-17T20:56:31.728+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.279 seconds (process running for 6.2)
-2026-01-17T20:56:32.622+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
-2026-01-17T20:56:50.402+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-17T20:56:50.402+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-17T20:56:50.405+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-01-17T20:56:50.541+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
-2026-01-17T20:56:50.642+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
-2026-01-17T20:56:50.642+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
-2026-01-17T20:56:50.655+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
-2026-01-17T20:56:50.711+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: kLja8MGC
-2026-01-17T20:56:50.712+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=6ba7c1e7-5c0f-4312-99ba-22238a2a3c59
-2026-01-17T20:56:50.716+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 178ms
-2026-01-17T20:56:57.691+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
-2026-01-17T20:56:57.757+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
-2026-01-17T20:56:57.757+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
-2026-01-17T20:56:57.760+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
-2026-01-17T20:56:57.773+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: p93zYSWh
-2026-01-17T20:56:57.775+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=62a367a6-cda1-4701-a453-41223013db0a
-2026-01-17T20:56:57.784+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 93ms
-2026-01-17T20:58:05.973+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
-2026-01-17T20:58:06.053+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
-2026-01-17T20:58:06.057+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
-2026-01-17T20:58:06.058+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
-2026-01-17T20:58:06.065+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: nFm3oBNG
-2026-01-17T20:58:06.066+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=5938db97-fd7a-4d70-856b-0a1f83629858
-2026-01-17T20:58:06.070+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 97ms
-2026-01-17T20:58:12.531+08:00  INFO 19376 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-17T20:58:12.577+08:00  INFO 19376 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-19T16:20:27.393+08:00  INFO 22052 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 22052 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T16:20:27.433+08:00  INFO 22052 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T16:20:30.133+08:00  WARN 22052 --- [my-netty] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-01-19T16:20:30.141+08:00  INFO 22052 --- [my-netty] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-19T16:20:30.188+08:00 ERROR 22052 --- [my-netty] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:614) ~[spring-context-7.0.2.jar:7.0.2]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.1.jar:4.0.1]
+	at com.webczw.my.netty.MyNettyApplication.main(MyNettyApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/tomcat/autoconfigure/servlet/TomcatServletWebServerAutoConfiguration.class]: Context path must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:610) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:225) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Context path must start with '/' and not end with '/'
+	at org.springframework.boot.web.server.servlet.ContextPath.of(ContextPath.java:47) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.servlet.ConfigurableServletWebServerFactory.setContextPath(ConfigurableServletWebServerFactory.java:58) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:292) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.autoconfigure.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:80) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.autoconfigure.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:46) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:74) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:300) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:161) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$0(LambdaSafe.java:303) ~[spring-boot-4.0.1.jar:4.0.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1117) ~[na:na]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:298) ~[spring-boot-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:74) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:60) ~[spring-boot-web-server-4.0.1.jar:4.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:426) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1809) ~[spring-beans-7.0.2.jar:7.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.2.jar:7.0.2]
+	... 16 common frames omitted
+
+2026-01-19T16:20:59.522+08:00  INFO 12584 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 12584 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T16:20:59.536+08:00  INFO 12584 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T16:21:02.131+08:00  INFO 12584 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T16:21:02.162+08:00  INFO 12584 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T16:21:02.163+08:00  INFO 12584 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T16:21:02.268+08:00  INFO 12584 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2577 ms
+2026-01-19T16:21:03.776+08:00  INFO 12584 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T16:21:03.796+08:00  INFO 12584 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 6.335 seconds (process running for 8.696)
+2026-01-19T16:21:05.340+08:00  INFO 12584 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T16:21:24.783+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T16:21:24.784+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T16:21:24.786+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T16:21:24.960+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T16:21:25.189+08:00  INFO 12584 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T16:21:25.189+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T16:21:25.201+08:00  INFO 12584 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T16:21:25.327+08:00  INFO 12584 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: SRsYwjmF
+2026-01-19T16:21:25.329+08:00  INFO 12584 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=448ebe14-af06-4158-af9e-962588b8802f
+2026-01-19T16:21:25.336+08:00  INFO 12584 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 377ms
+2026-01-19T17:28:12.174+08:00  INFO 4248 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 4248 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T17:28:12.184+08:00  INFO 4248 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T17:28:15.419+08:00  INFO 4248 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T17:28:15.453+08:00  INFO 4248 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T17:28:15.454+08:00  INFO 4248 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T17:28:15.582+08:00  INFO 4248 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3031 ms
+2026-01-19T17:28:16.862+08:00  INFO 4248 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T17:28:16.883+08:00  INFO 4248 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 7.294 seconds (process running for 13.782)
+2026-01-19T17:28:18.271+08:00  INFO 4248 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T17:28:29.440+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T17:28:29.440+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T17:28:29.443+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T17:28:29.804+08:00  WARN 4248 --- [my-netty] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.webczw.my.netty.client.ResponseResult com.webczw.my.netty.controller.TestController.helloNetty(com.webczw.my.netty.dto.MessageDTO)]
+2026-01-19T17:28:29.824+08:00  WARN 4248 --- [my-netty] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.webczw.my.netty.client.ResponseResult com.webczw.my.netty.controller.TestController.helloNetty(com.webczw.my.netty.dto.MessageDTO)]
+2026-01-19T17:28:31.384+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:28:32.035+08:00  INFO 4248 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:28:32.035+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:28:32.064+08:00  INFO 4248 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:30:40.553+08:00  WARN 4248 --- [my-netty] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.webczw.my.netty.client.ResponseResult com.webczw.my.netty.controller.TestController.helloNetty(com.webczw.my.netty.dto.MessageDTO)]
+2026-01-19T17:30:40.768+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:30:40.817+08:00  INFO 4248 --- [my-netty] [nioEventLoopGroup-5-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:30:40.821+08:00  INFO 4248 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:30:40.824+08:00  INFO 4248 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:31:08.877+08:00  INFO 4248 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T17:31:26.676+08:00  INFO 2996 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 2996 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T17:31:26.689+08:00  INFO 2996 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T17:31:28.737+08:00  INFO 2996 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T17:31:28.763+08:00  INFO 2996 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T17:31:28.763+08:00  INFO 2996 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T17:31:28.847+08:00  INFO 2996 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2041 ms
+2026-01-19T17:31:30.056+08:00  INFO 2996 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T17:31:30.073+08:00  INFO 2996 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.711 seconds (process running for 6.836)
+2026-01-19T17:31:30.991+08:00  INFO 2996 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T17:32:08.729+08:00  INFO 2996 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T17:32:08.730+08:00  INFO 2996 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T17:32:08.733+08:00  INFO 2996 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T17:32:09.003+08:00  INFO 2996 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:32:09.059+08:00  INFO 2996 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:32:09.060+08:00  INFO 2996 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:32:09.072+08:00  INFO 2996 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:33:56.541+08:00  INFO 2996 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T17:34:26.594+08:00  INFO 2996 --- [my-netty] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+2026-01-19T17:34:26.604+08:00  INFO 2996 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown aborted with one or more requests still active
+2026-01-19T17:34:26.596+08:00 ERROR 2996 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端Netty失败
+
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method) ~[na:na]
+	at java.base/java.lang.Object.wait(Object.java:375) ~[na:na]
+	at java.base/java.lang.Object.wait(Object.java:348) ~[na:na]
+	at io.netty.util.concurrent.DefaultPromise.await(DefaultPromise.java:232) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPromise.await(DefaultChannelPromise.java:129) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPromise.await(DefaultChannelPromise.java:28) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultPromise.sync(DefaultPromise.java:333) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:117) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:28) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:42) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T17:34:26.660+08:00 ERROR 2996 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行异常: helloNetty
+
+java.lang.RuntimeException: 服务异常
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:46) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T17:34:26.762+08:00  WARN 2996 --- [my-netty] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException
+2026-01-19T17:34:33.797+08:00  INFO 21308 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 21308 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T17:34:33.834+08:00  INFO 21308 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T17:34:36.184+08:00  INFO 21308 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T17:34:36.235+08:00  INFO 21308 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T17:34:36.236+08:00  INFO 21308 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T17:34:36.348+08:00  INFO 21308 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2319 ms
+2026-01-19T17:34:37.346+08:00  INFO 21308 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T17:34:37.356+08:00  INFO 21308 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.992 seconds (process running for 7.549)
+2026-01-19T17:34:38.297+08:00  INFO 21308 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T17:34:50.705+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T17:34:50.706+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T17:34:50.708+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T17:34:50.909+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:34:59.599+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:34:59.599+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:34:59.613+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:36:22.286+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:36:26.111+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-5-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:36:26.112+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:36:26.113+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:37:26.703+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:37:29.482+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:37:29.482+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:37:33.854+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:39:11.618+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:39:14.009+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:39:14.009+08:00  INFO 21308 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:39:17.582+08:00  INFO 21308 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T17:44:46.856+08:00  INFO 21308 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T17:45:01.805+08:00  INFO 4364 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 4364 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T17:45:01.817+08:00  INFO 4364 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T17:45:04.317+08:00  INFO 4364 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T17:45:04.355+08:00  INFO 4364 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T17:45:04.355+08:00  INFO 4364 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T17:45:04.480+08:00  INFO 4364 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2498 ms
+2026-01-19T17:45:05.636+08:00  INFO 4364 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T17:45:05.644+08:00  INFO 4364 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.429 seconds (process running for 7.558)
+2026-01-19T17:45:06.619+08:00  INFO 4364 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T17:45:33.796+08:00  INFO 4364 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T17:45:33.796+08:00  INFO 4364 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T17:45:33.799+08:00  INFO 4364 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T17:45:34.179+08:00  INFO 4364 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T17:45:36.800+08:00  INFO 4364 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T17:45:36.800+08:00  INFO 4364 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T17:45:37.438+08:00  INFO 4364 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T18:19:14.555+08:00  INFO 4364 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T18:21:01.775+08:00  INFO 21460 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 21460 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T18:21:01.784+08:00  INFO 21460 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T18:21:03.962+08:00  INFO 21460 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T18:21:03.992+08:00  INFO 21460 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T18:21:03.992+08:00  INFO 21460 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T18:21:04.080+08:00  INFO 21460 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2174 ms
+2026-01-19T18:21:05.075+08:00  INFO 21460 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T18:21:05.085+08:00  INFO 21460 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.994 seconds (process running for 8.441)
+2026-01-19T18:21:06.356+08:00  INFO 21460 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T18:21:18.036+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T18:21:18.037+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T18:21:18.039+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-19T18:21:18.279+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T18:21:23.533+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T18:21:23.533+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T18:21:23.568+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T18:21:29.285+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: "��\u0000\u0005sr\u0000\"com.webczw.my.netty.dto.MessageDTO�\u0005���\fe\u0002\u0000\u0002L\u0000\u0003msgt\u0000\u0012Ljava/lang/String;L\u0000\tmsgSwitchq\u0000~\u0000\u0001xpt\u0000\u0017202601019-A消息验证t\u0000\u00010"
+2026-01-19T18:22:34.200+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T18:22:36.394+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T18:22:36.394+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T18:22:36.395+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T18:22:36.407+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: "��\u0000\u0005sr\u0000\"com.webczw.my.netty.dto.MessageDTO�\u0005���\fe\u0002\u0000\u0002L\u0000\u0003msgt\u0000\u0012Ljava/lang/String;L\u0000\tmsgSwitchq\u0000~\u0000\u0001xpt\u0000\u0017202601019-A消息验证t\u0000\u00010"
+2026-01-19T18:23:19.669+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T18:23:21.679+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T18:23:21.679+08:00  INFO 21460 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T18:23:21.680+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T18:25:07.991+08:00  INFO 21460 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: "��\u0000\u0005sr\u0000\"com.webczw.my.netty.dto.MessageDTO�\u0005���\fe\u0002\u0000\u0002L\u0000\u0003msgt\u0000\u0012Ljava/lang/String;L\u0000\tmsgSwitchq\u0000~\u0000\u0001xpt\u0000\u0017202601019-A消息验证t\u0000\u00010"
+2026-01-19T18:26:26.574+08:00  INFO 21460 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T18:26:37.714+08:00  INFO 11536 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 11536 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T18:26:37.722+08:00  INFO 11536 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T18:26:39.965+08:00  INFO 11536 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T18:26:39.990+08:00  INFO 11536 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T18:26:39.990+08:00  INFO 11536 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T18:26:40.083+08:00  INFO 11536 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2241 ms
+2026-01-19T18:26:41.489+08:00  INFO 11536 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T18:26:41.498+08:00  INFO 11536 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.111 seconds (process running for 7.113)
+2026-01-19T18:26:42.658+08:00  INFO 11536 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T18:26:45.624+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T18:26:45.624+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T18:26:45.627+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T18:26:45.957+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T18:26:47.720+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T18:26:47.721+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T18:26:47.739+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T18:27:02.369+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 16414ms
+2026-01-19T20:11:37.204+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:11:41.061+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:11:41.061+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:11:41.062+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:11:53.584+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 16380ms
+2026-01-19T20:12:11.929+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:12:16.631+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:12:16.631+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:12:16.633+08:00  INFO 11536 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:13:01.727+08:00  INFO 11536 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 49798ms
+2026-01-19T20:20:11.439+08:00  INFO 12452 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 12452 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:20:11.454+08:00  INFO 12452 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:20:13.939+08:00  INFO 12452 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:20:13.967+08:00  INFO 12452 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:20:13.969+08:00  INFO 12452 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:20:14.063+08:00  INFO 12452 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2457 ms
+2026-01-19T20:20:15.029+08:00  INFO 12452 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:20:15.039+08:00  INFO 12452 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.363 seconds (process running for 10.58)
+2026-01-19T20:20:16.464+08:00  INFO 12452 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:20:27.720+08:00  INFO 12452 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:20:27.720+08:00  INFO 12452 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:20:27.723+08:00  INFO 12452 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-19T20:20:28.023+08:00  INFO 12452 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:20:32.047+08:00  INFO 12452 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:20:32.050+08:00  INFO 12452 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:20:32.080+08:00  INFO 12452 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:20:43.669+08:00 ERROR 12452 --- [my-netty] [nioEventLoopGroup-3-1] com.webczw.my.netty.util.JsonUtil        : JSON 字符串转换为对象失败
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('�' (code 65533 / 0xfffd)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2675) ~[jackson-core-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:743) ~[jackson-core-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2054) ~[jackson-core-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780) ~[jackson-core-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:5125) ~[jackson-databind-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:5028) ~[jackson-databind-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3954) ~[jackson-databind-2.20.1.jar:2.20.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3922) ~[jackson-databind-2.20.1.jar:2.20.1]
+	at com.webczw.my.netty.util.JsonUtil.fromJson(JsonUtil.java:79) ~[classes/:na]
+	at com.webczw.my.netty.server.NettyServerHandler.channelRead(NettyServerHandler.java:36) ~[classes/:na]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:20:56.704+08:00  INFO 12452 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: �� sr "com.webczw.my.netty.dto.MessageDTO����e L msgt Ljava/lang/String;L 	msgSwitchq ~ xpt 202601019-A消息验证t 0
+2026-01-19T20:24:12.215+08:00  INFO 12452 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T20:24:25.907+08:00  INFO 21208 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 21208 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:24:25.920+08:00  INFO 21208 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:24:28.053+08:00  INFO 21208 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:24:28.079+08:00  INFO 21208 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:24:28.080+08:00  INFO 21208 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:24:28.163+08:00  INFO 21208 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2048 ms
+2026-01-19T20:24:29.079+08:00  INFO 21208 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:24:29.094+08:00  INFO 21208 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.579 seconds (process running for 6.543)
+2026-01-19T20:24:30.061+08:00  INFO 21208 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:24:35.345+08:00  INFO 21208 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:24:35.345+08:00  INFO 21208 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:24:35.347+08:00  INFO 21208 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-19T20:24:35.536+08:00  INFO 21208 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:24:38.288+08:00  WARN 21208 --- [my-netty] [http-nio-8080-exec-2] io.netty.bootstrap.Bootstrap             : Unknown channel option 'TCP_NODELAY' for channel '[id: 0xd9210bb4]'
+2026-01-19T20:24:38.308+08:00  WARN 21208 --- [my-netty] [nioEventLoopGroup-4-1] io.netty.channel.ChannelInitializer      : Failed to initialize a channel. Closing: [id: 0xd9210bb4]
+
+java.lang.ClassCastException: class io.netty.channel.socket.nio.NioServerSocketChannel cannot be cast to class io.netty.channel.socket.SocketChannel (io.netty.channel.socket.nio.NioServerSocketChannel and io.netty.channel.socket.SocketChannel are in unnamed module of loader 'app')
+	at com.webczw.my.netty.util.NettyClientUtil$1.initChannel(NettyClientUtil.java:31) ~[classes/:na]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:606) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1412) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1131) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:656) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:24:38.401+08:00 ERROR 21208 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端Netty失败
+
+java.nio.channels.ClosedChannelException
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+
+2026-01-19T20:24:38.415+08:00 ERROR 21208 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行异常: helloNetty
+
+java.lang.RuntimeException: 服务异常
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:49) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:24:38.460+08:00 ERROR 21208 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/netty] threw exception [Request processing failed: java.lang.RuntimeException: 服务异常] with root cause
+
+java.lang.RuntimeException: 服务异常
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:49) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:27:16.897+08:00  INFO 21208 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T20:28:13.932+08:00  INFO 2604 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 2604 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:28:13.948+08:00  INFO 2604 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:28:16.564+08:00  INFO 2604 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:28:16.609+08:00  INFO 2604 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:28:16.610+08:00  INFO 2604 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:28:16.753+08:00  INFO 2604 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2632 ms
+2026-01-19T20:28:17.940+08:00  INFO 2604 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:28:17.950+08:00  INFO 2604 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 6.013 seconds (process running for 8.07)
+2026-01-19T20:28:18.754+08:00  INFO 2604 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:28:54.610+08:00  INFO 2604 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:28:54.611+08:00  INFO 2604 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:28:54.614+08:00  INFO 2604 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-19T20:28:54.890+08:00  INFO 2604 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:28:57.573+08:00  WARN 2604 --- [my-netty] [http-nio-8080-exec-2] io.netty.bootstrap.ServerBootstrap       : Unknown channel option 'TCP_NODELAY' for channel '[id: 0xd59b8d7e]'
+2026-01-19T20:28:57.615+08:00 ERROR 2604 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端Netty失败
+
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[na:na]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1283) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:989) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:364) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:28:57.628+08:00 ERROR 2604 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行异常: helloNetty
+
+java.lang.RuntimeException: 服务异常
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:59) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:28:57.640+08:00 ERROR 2604 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/netty] threw exception [Request processing failed: java.lang.RuntimeException: 服务异常] with root cause
+
+java.lang.RuntimeException: 服务异常
+	at com.webczw.my.netty.util.NettyClientUtil.helloNetty(NettyClientUtil.java:59) ~[classes/:na]
+	at com.webczw.my.netty.controller.TestController.helloNetty(TestController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.aop.MethodLogPrintAspect.around(MethodLogPrintAspect.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.webczw.my.netty.controller.TestController$$SpringCGLIB$$0.helloNetty(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:37:24.020+08:00  INFO 17572 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 17572 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:37:24.045+08:00  INFO 17572 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:37:26.892+08:00  INFO 17572 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:37:26.974+08:00  INFO 17572 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:37:26.976+08:00  INFO 17572 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:37:27.287+08:00  INFO 17572 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3081 ms
+2026-01-19T20:37:28.543+08:00  INFO 17572 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:37:28.552+08:00  INFO 17572 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 6.748 seconds (process running for 8.809)
+2026-01-19T20:37:29.988+08:00  INFO 17572 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:37:32.932+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:37:32.933+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:37:32.938+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-01-19T20:37:33.363+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:37:36.222+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:37:36.223+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:37:36.240+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:37:40.337+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-1] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:37:48.015+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 14654ms
+2026-01-19T20:37:49.627+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-1] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:392) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:342) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1354) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:917) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:822) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:38:13.769+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:38:17.746+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:38:17.747+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:38:17.750+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:38:41.205+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-2] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:39:21.359+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 67590ms
+2026-01-19T20:40:37.023+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-2] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:392) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:342) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1354) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:917) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:822) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:40:46.735+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:40:50.116+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:40:50.116+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:40:50.117+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:42:25.874+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-3] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:42:27.296+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 100561ms
+2026-01-19T20:42:28.355+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-3] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:392) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:342) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1354) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:917) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:822) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:42:34.038+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:42:36.437+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-8-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:42:36.437+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:42:36.439+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:42:43.159+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-4] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:42:45.656+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 11618ms
+2026-01-19T20:42:55.300+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-4] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:392) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:342) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1354) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:917) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:822) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:46:06.082+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-7] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:46:10.257+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-9-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:46:10.257+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-7] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:46:10.262+08:00  INFO 17572 --- [my-netty] [nioEventLoopGroup-3-5] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:47:16.686+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-5] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:47:56.081+08:00  INFO 17572 --- [my-netty] [http-nio-8080-exec-7] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 109999ms
+2026-01-19T20:47:56.827+08:00 ERROR 17572 --- [my-netty] [nioEventLoopGroup-3-5] com.webczw.my.netty.util.ByteUtil        : 字节数组转换为对象失败
+
+java.io.StreamCorruptedException: invalid stream header: 7B0D0A20
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:974) ~[na:na]
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:401) ~[na:na]
+	at com.webczw.my.netty.util.ByteUtil.byteToObject(ByteUtil.java:86) ~[classes/:na]
+	at com.webczw.my.netty.common.MessageDecoder.decode(MessageDecoder.java:13) ~[classes/:na]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:392) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:359) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:342) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1354) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:917) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:822) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[netty-all-4.1.17.Final.jar:4.1.17.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2026-01-19T20:49:36.064+08:00  INFO 17572 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T20:49:36.145+08:00  INFO 17572 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-19T20:54:05.196+08:00  INFO 19736 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19736 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:54:05.205+08:00  INFO 19736 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:54:07.371+08:00  INFO 19736 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:54:07.396+08:00  INFO 19736 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:54:07.396+08:00  INFO 19736 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:54:07.476+08:00  INFO 19736 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2136 ms
+2026-01-19T20:54:08.404+08:00  INFO 19736 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:54:08.413+08:00  INFO 19736 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.645 seconds (process running for 6.729)
+2026-01-19T20:54:09.273+08:00  INFO 19736 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:55:34.182+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:55:34.183+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:55:34.189+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-01-19T20:55:34.461+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:55:37.804+08:00  INFO 19736 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:55:37.805+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:55:37.826+08:00  INFO 19736 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:55:54.521+08:00  INFO 19736 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 20061ms
+2026-01-19T20:56:53.748+08:00  INFO 19736 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T20:56:53.779+08:00  INFO 19736 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-19T20:57:07.288+08:00  INFO 4292 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 4292 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T20:57:07.297+08:00  INFO 4292 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T20:57:10.453+08:00  INFO 4292 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T20:57:10.507+08:00  INFO 4292 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T20:57:10.508+08:00  INFO 4292 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T20:57:10.741+08:00  INFO 4292 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3319 ms
+2026-01-19T20:57:11.888+08:00  INFO 4292 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T20:57:11.898+08:00  INFO 4292 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.956 seconds (process running for 8.011)
+2026-01-19T20:57:12.738+08:00  INFO 4292 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T20:58:54.372+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T20:58:54.376+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T20:58:54.383+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-01-19T20:58:55.762+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T20:59:01.312+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T20:59:01.315+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T20:59:01.319+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T20:59:18.662+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "msg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:07:29.833+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:07:36.844+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:07:36.844+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:07:36.849+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:07:36.919+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "msg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:08:17.987+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:08:19.937+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:08:19.939+08:00  INFO 4292 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:08:19.942+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:08:21.876+08:00  INFO 4292 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "msg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:10:39.764+08:00  INFO 19380 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19380 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T21:10:39.772+08:00  INFO 19380 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T21:10:43.201+08:00  INFO 19380 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T21:10:43.240+08:00  INFO 19380 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T21:10:43.245+08:00  INFO 19380 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T21:10:43.473+08:00  INFO 19380 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3579 ms
+2026-01-19T21:10:45.240+08:00  INFO 19380 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T21:10:45.270+08:00  INFO 19380 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 7.265 seconds (process running for 13.094)
+2026-01-19T21:10:46.809+08:00  INFO 19380 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T21:10:52.541+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T21:10:52.543+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T21:10:52.548+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-19T21:10:52.837+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:10:54.986+08:00  INFO 19380 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:10:54.989+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:10:55.013+08:00  INFO 19380 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:10:56.656+08:00  INFO 19380 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "msg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:10:58.641+08:00  INFO 19380 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "msg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:10:58.649+08:00  INFO 19380 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 5813ms
+2026-01-19T21:14:33.362+08:00  INFO 14392 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 14392 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T21:14:33.372+08:00  INFO 14392 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T21:14:35.754+08:00  INFO 14392 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T21:14:35.788+08:00  INFO 14392 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T21:14:35.788+08:00  INFO 14392 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T21:14:35.910+08:00  INFO 14392 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2411 ms
+2026-01-19T21:14:36.951+08:00  INFO 14392 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T21:14:36.961+08:00  INFO 14392 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.111 seconds (process running for 7.12)
+2026-01-19T21:14:37.926+08:00  INFO 14392 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T21:14:43.094+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T21:14:43.096+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T21:14:43.103+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-19T21:14:43.557+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:14:47.643+08:00  INFO 14392 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:14:47.643+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:14:47.652+08:00  INFO 14392 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:14:48.112+08:00  INFO 14392 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "5231ef6c-9bdc-490f-bef8-ae97029338fc",
+  "serverTime" : 1768828487718,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:14:51.065+08:00  INFO 14392 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "5231ef6c-9bdc-490f-bef8-ae97029338fc",
+  "serverTime" : 1768828487718,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:14:51.080+08:00  INFO 14392 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 7524ms
+2026-01-19T21:29:25.275+08:00  INFO 14392 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19T21:41:56.288+08:00  INFO 16484 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 16484 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-19T21:41:56.299+08:00  INFO 16484 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T21:41:58.585+08:00  INFO 16484 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T21:41:58.620+08:00  INFO 16484 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T21:41:58.620+08:00  INFO 16484 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T21:41:58.716+08:00  INFO 16484 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2280 ms
+2026-01-19T21:41:59.748+08:00  INFO 16484 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/netty'
+2026-01-19T21:41:59.760+08:00  INFO 16484 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.144 seconds (process running for 7.381)
+2026-01-19T21:42:00.822+08:00  INFO 16484 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-19T21:42:22.748+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/netty]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T21:42:22.749+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T21:42:22.751+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-19T21:42:23.122+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:42:23.215+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:42:23.215+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:42:23.219+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:42:23.594+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "46a5db33-38cf-40a2-8c4f-62a02ff2037a",
+  "serverTime" : 1768830143276,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:42:23.599+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "46a5db33-38cf-40a2-8c4f-62a02ff2037a",
+  "serverTime" : 1768830143276,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-A消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:42:23.610+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 490ms
+2026-01-19T21:43:14.935+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:43:14.973+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:43:14.973+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:43:14.974+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:43:14.981+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "e10ebb42-3602-43d9-ae4f-e4a18d0fb79f",
+  "serverTime" : 1768830194981,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-B消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:43:14.983+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "e10ebb42-3602-43d9-ae4f-e4a18d0fb79f",
+  "serverTime" : 1768830194981,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-B消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:43:14.988+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 53ms
+2026-01-19T21:43:45.978+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:43:46.018+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:43:46.018+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-4] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:43:46.021+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:43:46.028+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "8949e653-a30e-4691-a7a4-69e15d84136e",
+  "serverTime" : 1768830226028,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-B消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:43:46.030+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "8949e653-a30e-4691-a7a4-69e15d84136e",
+  "serverTime" : 1768830226028,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-B消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:43:46.034+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-4] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 56ms
+2026-01-19T21:44:10.522+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-19T21:44:10.566+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-8-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-19T21:44:10.566+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-19T21:44:10.569+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-19T21:44:10.575+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-3-4] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: {
+  "uuid" : "f836995e-f244-42ee-a81d-68ab44cbafef",
+  "serverTime" : 1768830250575,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-C消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:44:10.578+08:00  INFO 16484 --- [my-netty] [nioEventLoopGroup-8-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: {
+  "uuid" : "f836995e-f244-42ee-a81d-68ab44cbafef",
+  "serverTime" : 1768830250575,
+  "serverMsg" : "你也好哦!",
+  "clientMsg" : "202601019-C消息验证",
+  "msgSwitch" : "0"
+}
+2026-01-19T21:44:10.590+08:00  INFO 16484 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 68ms
+2026-01-19T21:44:23.139+08:00  INFO 16484 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
