@@ -1,0 +1,76 @@
+2026-01-17T20:41:12.944+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19444 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-17T20:41:12.958+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-17T20:41:15.273+08:00  INFO 19444 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-17T20:41:15.307+08:00  INFO 19444 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-17T20:41:15.309+08:00  INFO 19444 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-17T20:41:15.412+08:00  INFO 19444 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2315 ms
+2026-01-17T20:41:16.360+08:00  INFO 19444 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-17T20:41:16.370+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 5.069 seconds (process running for 7.763)
+2026-01-17T20:41:17.392+08:00  INFO 19444 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-17T20:42:36.243+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-17T20:42:36.243+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-17T20:42:36.248+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-01-17T20:42:36.368+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-17T20:42:36.432+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-17T20:42:36.432+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-17T20:42:36.435+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-17T20:42:36.489+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: OWM6ncTxContent-Type: application/json
+2026-01-17T20:42:36.489+08:00  INFO 19444 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦
+2026-01-17T20:42:36.493+08:00  INFO 19444 --- [my-netty] [http-nio-8080-exec-1] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 125ms
+2026-01-17T20:44:19.275+08:00  INFO 19444 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-17T20:44:29.695+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 18860 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-17T20:44:29.716+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-17T20:44:31.732+08:00  INFO 18860 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-17T20:44:31.759+08:00  INFO 18860 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-17T20:44:31.760+08:00  INFO 18860 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-17T20:44:31.851+08:00  INFO 18860 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1997 ms
+2026-01-17T20:44:32.792+08:00  INFO 18860 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-17T20:44:32.801+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.682 seconds (process running for 6.702)
+2026-01-17T20:44:33.992+08:00  INFO 18860 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-17T20:44:39.411+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-17T20:44:39.413+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-17T20:44:39.417+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-17T20:44:39.579+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-17T20:44:39.653+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-17T20:44:39.656+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-17T20:44:39.660+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-17T20:44:39.705+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: plFPYoe1
+2026-01-17T20:44:39.718+08:00  INFO 18860 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦
+2026-01-17T20:44:39.722+08:00  INFO 18860 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 146ms
+2026-01-17T20:48:36.387+08:00  INFO 18860 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-17T20:48:36.424+08:00  INFO 18860 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-17T20:56:28.877+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Starting MyNettyApplication using Java 22 with PID 19376 (F:\Users\wilber\IdeaProjects\my-netty\target\classes started by MyPC in F:\Users\wilber\IdeaProjects\my-netty)
+2026-01-17T20:56:28.881+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-17T20:56:30.744+08:00  INFO 19376 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-17T20:56:30.775+08:00  INFO 19376 --- [my-netty] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-17T20:56:30.775+08:00  INFO 19376 --- [my-netty] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-17T20:56:30.855+08:00  INFO 19376 --- [my-netty] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1843 ms
+2026-01-17T20:56:31.711+08:00  INFO 19376 --- [my-netty] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-17T20:56:31.728+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.MyNettyApplication   : Started MyNettyApplication in 4.279 seconds (process running for 6.2)
+2026-01-17T20:56:32.622+08:00  INFO 19376 --- [my-netty] [main] com.webczw.my.netty.server.NettyServer   : 服务器启动开始监听端口: 8082
+2026-01-17T20:56:50.402+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-17T20:56:50.402+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-17T20:56:50.405+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-17T20:56:50.541+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-17T20:56:50.642+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-17T20:56:50.642+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-17T20:56:50.655+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-17T20:56:50.711+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-1] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: kLja8MGC
+2026-01-17T20:56:50.712+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-4-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=6ba7c1e7-5c0f-4312-99ba-22238a2a3c59
+2026-01-17T20:56:50.716+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-2] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 178ms
+2026-01-17T20:56:57.691+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-17T20:56:57.757+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-17T20:56:57.757+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-17T20:56:57.760+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-17T20:56:57.773+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-2] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: p93zYSWh
+2026-01-17T20:56:57.775+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-6-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=62a367a6-cda1-4701-a453-41223013db0a
+2026-01-17T20:56:57.784+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-3] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 93ms
+2026-01-17T20:58:05.973+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法开始执行: helloNetty
+2026-01-17T20:58:06.053+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端Active .....
+2026-01-17T20:58:06.057+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.webczw.my.netty.util.NettyClientUtil   : 客户端发送成功....
+2026-01-17T20:58:06.058+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : Channel active......
+2026-01-17T20:58:06.065+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-3-3] c.w.my.netty.server.NettyServerHandler   : 服务器收到消息: nFm3oBNG
+2026-01-17T20:58:06.066+08:00  INFO 19376 --- [my-netty] [nioEventLoopGroup-7-1] c.w.my.netty.client.NettyClientHandler   : 客户端收到消息: 你也好哦,uuid=5938db97-fd7a-4d70-856b-0a1f83629858
+2026-01-17T20:58:06.070+08:00  INFO 19376 --- [my-netty] [http-nio-8080-exec-5] c.w.my.netty.aop.MethodLogPrintAspect    : 方法执行结束: helloNetty, 耗时: 97ms
+2026-01-17T20:58:12.531+08:00  INFO 19376 --- [my-netty] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-17T20:58:12.577+08:00  INFO 19376 --- [my-netty] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
